@@ -20,14 +20,14 @@ public class GameManager : MonoBehaviour
 
 	void Start()
 	{
-		levelText.text = "Player Level: " + playerLevel.ToString();
+		levelText.text = "Level: " + playerLevel.ToString();
 		startLevelUI.SetActive(true);
 
 	}
 
 	void addLevel()
 	{
-		playerLevel = playerLevel + 1;
+		this.playerLevel = this.playerLevel + 1;
 	}
 
 	public int getPlayerLevel()
@@ -43,7 +43,6 @@ public class GameManager : MonoBehaviour
 
 	public void CompleteLevel()
 	{
-		movement.enabled = false;
 		this.addLevel();
 		completeLevelUI.SetActive(true);
 	}
@@ -52,6 +51,7 @@ public class GameManager : MonoBehaviour
 	{
 		if (gameHasEnded == false)
 		{
+			movement.enabled = false;
 			gameHasEnded = true;
 			Invoke("Restart", restartDelay);
 		}
