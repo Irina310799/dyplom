@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 
 	public float restartDelay = 1f;
 	public GameObject completeLevelUI;
+	public GameObject startLevelUI;
 	public Text levelText;
 	public PlayerMovement movement;
 
@@ -20,6 +21,7 @@ public class GameManager : MonoBehaviour
 	void Start()
 	{
 		levelText.text = "Player Level: " + playerLevel.ToString();
+		startLevelUI.SetActive(true);
 
 	}
 

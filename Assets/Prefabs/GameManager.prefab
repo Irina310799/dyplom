@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7072562836368383961}
+  - component: {fileID: 6775499400144829586}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -30,3 +31,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6775499400144829586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5538948636703537448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f42971be6bcd8a4191d985de6a7c237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  restartDelay: 1
+  completeLevelUI: {fileID: 5921457905982647943, guid: ab308dcbeb6adb24fb09319fef41d71c,
+    type: 3}
+  startLevelUI: {fileID: 3951485363899969112, guid: 8f04723c4dbf2a24780b103a23d26f4e,
+    type: 3}
+  levelText: {fileID: 5703086108433382051, guid: a32ec47d8e902c14fb277fbd75c68b84,
+    type: 3}
+  movement: {fileID: 5564308305575780790, guid: 504a25f4d49e0b244bd17912241a6a79,
+    type: 3}
