@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
 	public void CompleteLevel()
 	{
 		movement.enabled = false;
-		addLevel();
+		this.addLevel();
 		completeLevelUI.SetActive(true);
 	}
 
