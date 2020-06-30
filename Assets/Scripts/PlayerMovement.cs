@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("vertical", movement.y);
         animator.SetFloat("speed", movement.sqrMagnitude);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetMouseButtonDown(0))
         {
             animator.SetTrigger("Attack");
             this.Attack();
